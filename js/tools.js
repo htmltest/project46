@@ -145,12 +145,6 @@ var sliderTimer     = null;
         } else {
             $('video').attr('width', '480').attr('height', '270');
         }
-
-        if ($(window).width() > 750) {
-            $('.wrapper').css({'padding-top': 0});
-        } else {
-            $('.wrapper').css({'padding-top': $('.top').height()});
-        }
     });
 
     $(window).bind('load resize scroll', function() {

@@ -11,10 +11,6 @@ img {border:none}
 
 .wrapper {width:100%; min-width:480px; position:relative; overflow:hidden}
 
-@media (max-width:768px) {
-    .wrapper {padding:80px 0 0 0}
-}
-
 .top {display:none; position:fixed; z-index:20; left:0; top:0; width:100%; background:#fff; box-shadow:1px 1px 5px rgba(12, 10, 5, .25)}
 .top.visible {display:block}
 .top-inner {max-width:960px; margin:0 auto}
@@ -33,7 +29,6 @@ img {border:none}
 .top-inner a:hover .top-buy {display:table-cell}
 
 @media (max-width:768px) {
-    .top {display:block}
     .top-photo {padding:10px}
     .top-buy {padding:0 10px 0 11px}
 }
@@ -175,8 +170,8 @@ header:after {content:"."; display:block; clear:both; visibility:hidden; height:
 }
 
 @media (max-width:480px) {
-    .info-cols {margin:0}
-    .info-col {float:none; width:auto; padding:0}
+    .info-cols {margin:0; padding:0}
+    .info-col {float:none; width:auto; padding:20px 0}
 }
 
 .video {position:relative; max-width:1000px; margin:0 auto 82px auto; height:441px; background:#000 url(../images/video.jpg) no-repeat center; background-size:cover}
