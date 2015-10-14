@@ -120,9 +120,9 @@ var sliderTimer     = null;
             e.preventDefault();
         });
 
-        $('.top-inner a').click(function(e) {
-            var curIndex = $('.top-inner a').index($(this));
-            $.scrollTo($('.product').eq(curIndex), 500, {offset: -100});
+        $('.top-text').click(function(e) {
+            var curIndex = $('.top-text').index($(this));
+            $.scrollTo($('.product').eq(curIndex), 500, {offset: -30});
             e.preventDefault();
         });
 

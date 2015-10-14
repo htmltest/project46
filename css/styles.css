@@ -15,18 +15,19 @@ img {border:none}
 .top.visible {display:block}
 .top-inner {max-width:960px; margin:0 auto}
 .top-inner:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
-.top-inner a {float:left; width:33.33%; display:table}
-.top-inner a:hover {text-decoration:none; background:#d7152b}
+.top-inner-item {float:left; width:33.33%; display:table}
+.top-inner-item:hover {background:#d7152b}
 .top-photo {display:table-cell; vertical-align:middle; padding:10px 10px 10px 20px; line-height:0}
 .top-photo img {height:40px}
 .top-text {display:table-cell; vertical-align:middle; width:100%; height:60px}
+.top-inner a:hover {text-decoration:none}
 .top-title {font-weight:bold; color:#404040}
-.top-inner a:hover .top-title {color:#fff}
+.top-inner-item:hover .top-title {color:#fff}
 .top-price {color:#d7152b}
-.top-inner a:hover .top-price {color:#fff}
+.top-inner-item:hover .top-price {color:#fff}
 .top-buy {display:none; white-space:nowrap; vertical-align:middle; height:60px; font-size:12px; font-weight:bold; text-transform:uppercase; color:#fff; padding:0 20px 0 21px; position:relative}
 .top-buy:before {content:""; display:block; width:1px; height:30px; position:absolute; left:0; top:10px; background:#e15060}
-.top-inner a:hover .top-buy {display:table-cell}
+.top-inner-item:hover .top-buy {display:table-cell}
 
 @media (max-width:768px) {
     .top-photo {padding:10px}
@@ -34,16 +35,16 @@ img {border:none}
 }
 
 @media (max-width:750px) {
-    .top-inner a {display:block; box-sizing:border-box; position:relative; border-left:2px solid #fff}
-    .top-inner a:first-child {border:none}
+    .top-inner-item {display:block; box-sizing:border-box; position:relative; border-left:2px solid #fff}
+    .top-inner-item:first-child {border:none}
     .top-photo {display:block; position:relative; padding:0}
     .top-photo img {width:100%; height:auto}
     .top-text {display:none; position:absolute; left:0; top:100%; background:#d7152b; padding:20px 17px 19px 17px; height:auto; box-sizing:border-box; text-align:center; box-shadow:1px 1px 5px rgba(12, 10, 5, .25)}
-    .top-inner a:hover .top-text {display:block}
+    .top-inner-item:hover .top-text {display:block}
     .top-buy {position:absolute; left:0; top:100%; margin-top:79px; width:100%; background:#d7152b; box-sizing:border-box; height:auto; padding:0 17px 11px 17px; text-align:center; box-shadow:1px 1px 5px rgba(12, 10, 5, .25)}
     .top-buy:before {width:100%; height:1px; margin:0 0 10px 0; position:relative; left:auto; top:auto}
     .top-buy:after {content:""; display:block; position:absolute; left:0; top:-5px; width:100%; height:5px; background:#d7152b}
-    .top-inner a:hover .top-buy {display:block}
+    .top-inner-item:hover .top-buy {display:block}
 }
 
 header {max-width:940px; padding:0 10px 26px 10px; margin:0 auto; display:table}
