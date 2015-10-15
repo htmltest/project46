@@ -115,14 +115,12 @@ var sliderTimer     = null;
                 $('.buy-city-select a').html(curLink.html());
                 $('.buy-list-item').removeClass('active');
                 $('.buy-list-item[data-city="' + curLink.data('city') + '"]').addClass('active');
+
+                $('.buy-personal-item').removeClass('active');
+                $('.buy-personal-item[data-city="' + curLink.data('city') + '"]').addClass('active');
+                $('.buy-personal-item[data-city="all"]').addClass('active');
             }
             $('.overlay, .window').hide();
-            e.preventDefault();
-        });
-
-        $('.top-text').click(function(e) {
-            var curIndex = $('.top-text').index($(this));
-            $.scrollTo($('.product').eq(curIndex), 500, {offset: -30});
             e.preventDefault();
         });
 

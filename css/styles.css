@@ -199,14 +199,15 @@ header:after {content:"."; display:block; clear:both; visibility:hidden; height:
 
 .buy-personal {margin:29px 0 37px -20px}
 .buy-personal:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
-.buy-personal-item {float:left; width:33.33%; padding:0 0 20px 20px; box-sizing:border-box}
+.buy-personal-item {display:none; float:left; width:33.33%; padding:0 0 20px 20px; box-sizing:border-box}
+.buy-personal-item.active {display:block}
 .buy-personal a {display:block; border:1px solid #ddd; text-align:center; height:138px}
 .buy-personal a:hover {text-decoration:none; border-color:#d7152b}
 .buy-personal-logo {height:70px; line-height:70px; padding:12px 0 0 0}
 .buy-personal-logo img {vertical-align:middle}
 .buy-personal-name {font-size:14px; padding:12px 0 0 0}
 
-.buy-city-select {color:#404040; padding:0 0 0 22px; background:url(../images/buy-city-select.png) no-repeat left center; margin:9px 0 0 0}
+.buy-city-select {color:#404040; padding:0 0 0 22px; background:url(../images/buy-city-select.png) no-repeat left center; margin:9px 0 20px 0}
 .buy-city-select a {font-weight:bold; background:url(../images/dots.png) repeat-x left bottom}
 .buy-city-select a:hover {text-decoration:none; background:none}
 
